@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background:linear-gradient(#07A3B2,#D9ECC7);
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            text-align: center;
+        }
+        div {
+            border: 10px solid black;
+            background-color:  #ffff00;
+            border-radius:60px;
+            /* The Core Layout Controls */
+            padding: 100px;
+            justify-content:center;
+            align-items: center;
+            margin: 100px;   /* Space OUTSIDE the border (pushes everything away) */
+        }
+        p{
+            text-align:center;
+            display:inline-block;
+            margin: 40px auto;
+            align-items: center;
+            justify-content: center;
+            color:white;
+            transition: font-size 0.5s ease-in-out,color 0.5s ease-in-out;
+        }
+        p:hover{
+            animation: fullSpin 3s ease-in-out forwards;
+            font-size:24px;
+            color:rgb(116, 2, 247);
+        }
+        @keyframes fullSpin{
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        This box has 40px padding and 50px margin.
+    </div>
+
+    <p>This text is being pushed away by the box's margin.</p>
+
+</body>
+</html>
